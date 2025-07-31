@@ -23,4 +23,9 @@ describe("Automação feita no site de Testes online", () => {
       cy.get(':nth-child(1) > .card > .card-footer > .btn').click()
         
     });
+
+    it('Acessar', () => {
+      cy.visit("https://automationintesting.online/reservation/1?checkin=2025-07-30&checkout=2025-07-31")
+      cy.get('.rbc-toolbar > :nth-child(1) > :nth-child(1)').click()
+    });
 });
