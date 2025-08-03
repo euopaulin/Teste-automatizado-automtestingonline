@@ -24,8 +24,15 @@ describe("Automação feita no site de Testes online", () => {
         
     });
 
-    it('Acessar', () => {
+    it('Fazer nova reserva preenchendo campos', () => {
       cy.visit("https://automationintesting.online/reservation/1?checkin=2025-07-30&checkout=2025-07-31")
       cy.get('.rbc-toolbar > :nth-child(1) > :nth-child(1)').click()
+      cy.get('#doReservation').click()
+      cy.get('.room-booking-form > .form-control').type('Paulo')
+      cy.get(':nth-child(2) > .form-control').type('Henrique')
+      cy.get(':nth-child(3) > .form-control').type('paulo@gmail.com')
+      cy.get(':nth-child(4) > .form-control').type('06140028922')
+      cy.get('.btn-primary').should('be.visible')
+      cy.get('.btn-primary').click()
     });
 });
