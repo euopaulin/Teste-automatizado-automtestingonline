@@ -14,6 +14,23 @@ O objetivo é com o uso do Cypress automatizar inputs, buttons e outras funciona
 </p>
 
 
+### Casos de testes feitos:
+
+1-
+
+- Usuário acessa a página
+- o Código verifica se o botão 'Book Now' está visivel
+- Caso esteja visivel o usuário clica nele
+- Após isso seria direcionado para a página de preenchimento dos campos de dados
+- Usuário clica nos campos de inserção de dados e preenche eles
+- Após preencher o usuário irá clicar em 'Submit'
+- O código irá verificar se o texto de cadastro feito com sucesso irá ficar visivel
+
+2
+
+- Usuário acessa novamente a página inicial
+- Agora ele fará uma reserva
+
 
 
 
