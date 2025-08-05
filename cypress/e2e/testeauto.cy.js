@@ -20,7 +20,7 @@ describe("Automação feita no site de Testes online", () => {
 
     it('Fazer uma reserva', () => {
       cy.visit('https://automationintesting.online/#/')
-      cy.get(':nth-child(1) > .card > .card-footer > .btn').click()
+      cy.get('.col-8 > .btn').click()
         
     });
 
